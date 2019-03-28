@@ -7,6 +7,7 @@
 //--------------------------------------------
 #define ONE_WIRE_BUS 2
 #define MAX_CMD_LENGTH 1
+
 //--------------------------- Thermometers setup ---------------------------
 // You can find addresses with https://www.hacktronics.com/Tutorials/arduino-1-wire-address-finder.html
 
@@ -83,7 +84,7 @@ void parseCommand()
 
   // AGENT.HOSTNAME      
   } else if(cmd.equals("agent.hostname")) {
-     server.println("therm02.corp.ps.kz");
+     server.println("hostname.example.com");
 
   // TEMP0.READ
   } else if(cmd.equals("0")) {
